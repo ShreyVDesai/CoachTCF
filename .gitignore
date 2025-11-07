@@ -1,0 +1,96 @@
+# CoachTCF - Root .gitignore
+
+# Environment variables (CRITICAL - Contains sensitive credentials!)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env*.local
+**/.env
+**/.env.local
+
+# Dependencies
+node_modules/
+*/node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Package manager locks (optional - some prefer to commit these)
+# Uncomment if you don't want to track lock files
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Misc
+*.pem
+*.key
+*.cert
+
+# Production database backups
+*.sql.backup
+*.db.backup
+
+# Documentation builds (if using tools like Sphinx)
+docs/_build/
+
+# MacOS
+.AppleDouble
+.LSOverride
+Icon
+
+# Windows
+$RECYCLE.BIN/
+
+# Linux
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
